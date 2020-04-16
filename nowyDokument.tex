@@ -25,11 +25,11 @@
 \usepackage{polski} % Pakiet dodający język polski - https://ctan.org/pkg/polski
 
 % \usepackage{xparse} % Pakiet oferujący dodatkowe możliwości przy tworzeniu nowych, własnych poleceń - https://www.ctan.org/pkg/xparse
-	% Jego dodanie może spowodować wystąpienie błędów w obecnie działających poleceniach!
+% Jego dodanie może spowodować wystąpienie błędów w obecnie działających poleceniach!
 
 \usepackage{enumitem} % Pakiet umożliwiający większą kontrolę nad środowiskami enumerate, itemize i description
 	\setlist{nolistsep} % We żadnych środowiskach enumerate/itemize/description nie chcemy mieć odstępów pionowych.
-	\renewcommand{\labelitemi}{$\bullet$} % Ustawienie kropki jako punktatora listy {itemize}.
+	\renewcommand{\labelitemi}{$\bullet$} % Ustawienie kropki jako punktatora pierwszego poziomu listy {itemize}.
 	% \renewcommand{\labelitemii}{$\bullet$} % Ustawienie kropki jako punktatora drugiego poziomu listy {itemize}.
 	
 \usepackage{makeidx} % Pakiet umożliwiający tworzenie indeksów - https://ctan.org/pkg/makeidx
@@ -116,10 +116,10 @@
 				% TwoPageRight - Wyświetlaj dwie strony, nieparzyste strony po prawej stronie (od PDF 1.5).
 		% pdfstartpage=1, % Numer strony, na którym dokument ma się domyślnie otworzyć
 		% pdfnumcopies=, % Domyślna liczba drukowanych kopii
-		% filebordercolor=,	% color of border around file links
+		% filebordercolor=, % color of border around file links
 		% filecolor=, % color of file links
 		% linkbordercolor=, % color of border around links
-		% menubordercolor=,	% color of border around menu links
+		% menubordercolor=, % color of border around menu links
 		% menucolor=, % color for menu links
 		% pagebackref=, % backreference by page number
 		% pdfcenterwindow=false, % position the document window in the center of the screen
@@ -140,7 +140,7 @@
 %	- coffee - Pakiet umożliwiający dodanie plam po kawie, ciekawe na 1. kwietnia - http://www.hanno-rein.de/archives/349
 
 
-% Wypełnienie ...... - \dotline{długość + 0,1cm}.
+% Wypełnienie ...... - \dotline{długość + 0,1 cm}.
 \def\dotfill#1{\cleaders\hbox to #1{.}\hfill}
 \newcommand\dotline[2][0,1cm]{\leavevmode\hbox to #2 {\dotfill{#1}\hfil}}	
  
