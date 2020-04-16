@@ -1,22 +1,26 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREAMBUŁA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                            W tej części dokumentu określasz jego rodzaj i styl,                           %
-%                          dołączasz pakiety rozszerzające możliwości LaTeXa, etc.                          %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREAMBUŁA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                          W tej części dokumentu określasz jego rodzaj i styl,                                         %
+%                                        dołączasz pakiety rozszerzające możliwości LaTeXa, etc.                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[11pt,oneside,notitlepage,a4paper,wide]{mwart}
 	% 11pt - Wybór rozmiaru czcionki dla podstawowej wielkości pisma (domyślnie - 10pt)
 	% oneside/twoside - Druk jednostronny/dwustronny z wyrównywaniem wysokości sąsiadujących stron.
-	% titlepage/notitlepage - Złożenie tytułu (instrukcja \maketitle) oraz streszczenia (instrukcja \begin{abstract}) na osobnej stronie/brak stronyn tytułowej.
+	% titlepage/notitlepage - Złożenie tytułu (instrukcja \maketitle) oraz streszczenia (instrukcja \begin{abstract}) na osobnej
+% stronie/brak stronyn tytułowej.
 	% a4paper - Wybór rozmiaru papieru.
-	% wide - Zmiejszenie rozmiaru marginesów. Jej użycie może utrudniać czytanie - w jednej linijce nie powinno być więcej niż 70 znaków, ale może być przydatna w przypadku składu dwułamowego.
+	% wide - Zmiejszenie rozmiaru marginesów. Jej użycie może utrudniać czytanie - w jednej linijce nie powinno być więcej niż
+% 70 znaków, ale może być przydatna w przypadku składu dwułamowego.
 	% onecolumn/twocolumn - skład jedno- lub dwułamowy (kolumnowy)
 	%
-	% mwart - Zdefiniowanie klasy dokumentu. Standardowe: article, book, report (dłuższe wypracowania, prace magisterskie), letter i beamer (prezentacje).
+	% mwart - Zdefiniowanie klasy dokumentu. Standardowe: article, book, report (dłuższe wypracowania, prace magisterskie), letter
+% i beamer (prezentacje).
 	% Dla polskich użytkowników sa dostępne klasy uwzględniające polskie standardy typograficzne: mwart, mwbk i mwrep.
 	
-\usepackage[utf8]{inputenc} % Pakiet (niewymagany po 2018 r.) definiujący układ znaków w pliku źródłowym, pozwala kodować znaki diakrytyczne - https://ctan.org/pkg/inputenc
+\usepackage[utf8]{inputenc} % Pakiet (niewymagany po 2018 r.) definiujący układ znaków w pliku źródłowym, pozwala kodować
+% znaki diakrytyczne - https://ctan.org/pkg/inputenc
 
 \usepackage{polski} % Pakiet dodający język polski - https://ctan.org/pkg/polski
 
@@ -37,17 +41,22 @@
 \onehalfspacing	% Ustawienie pojedynczego odstępu między linijkami.
 \setlength{\parindent}{1.25 cm} % Rozmiar wcięcia akapitów.
 
-% \usepackage{indentfirst} % Pakiet definiujący wcięcie pierwszego akapitu zaraz po nagłówku sekcji, często stosowane w pracach naukowych - https://ctan.org/pkg/indentfirst
+% \usepackage{indentfirst} % Pakiet definiujący wcięcie pierwszego akapitu zaraz po nagłówku sekcji, często stosowane
+% w pracach naukowych - https://ctan.org/pkg/indentfirst
 
 % \usepackage{fancyhdr} % Pakiet dający większą kontrolę nad wyglądem i użyciem nagłówka i stopki - https://www.ctan.org/pkg/fancyhdr
 
-% \usepackage{longtable} % Pakiet ułatwiający tworzenie długich tabel przechodzących na kolejne strony - https://www.ctan.org/pkg/longtable
+% \usepackage{longtable} % Pakiet ułatwiający tworzenie długich tabel przechodzących na kolejne strony
+% https://www.ctan.org/pkg/longtable
 
-% \usepackage{array} % Pakiet rozszerzający możliwości formatowania środowisk tablicowych i tabelarycznych - https://www.ctan.org/pkg/array
+% \usepackage{array} % Pakiet rozszerzający możliwości formatowania środowisk tablicowych i tabelarycznych
+% https://www.ctan.org/pkg/array
 
-% \usepackage{lscape} % Pakiet pozwalający obrócić zawartość strony, pozostawiając jej numer nienaurszonym. Przydatne np. przy szerokich tabelach - https://www.ctan.org/pkg/lscape
+% \usepackage{lscape} % Pakiet pozwalający obrócić zawartość strony, pozostawiając jej numer nienaurszonym.
+% Przydatne np. przy szerokich tabelach - https://www.ctan.org/pkg/lscape
 
-% \usepackage{mathtools} % lub \usepackage{amsmath} – Pakiet umożliwiający w tekście ciągłym umieszczać duże, piętrowe symbole matematyczne oraz zawierający wiele ułatwiających pisanie wielolinijkowych wzorów środowisk.
+% \usepackage{mathtools} % lub \usepackage{amsmath} – Pakiet umożliwiający w tekście ciągłym umieszczać duże, piętrowe
+% symbole matematyczne oraz zawierający środowiska ułatwiające pisanie wielolinijkowych wzorów.
 
 % \usepackage{tikz} % Pakiet dodający narzędzia do tworzenia grafiki w LaTeXu - https://www.ctan.org/pkg/pgf
 
@@ -55,15 +64,18 @@
 
 % \usepackage{listings} % Pakiet pozwalający formatować kody programów w dokumencie - https://ctan.org/pkg/listings
 
-\usepackage{titling} % Pakiet zapewniający większą kontrolę nad poleceniem \maketitle i \thanks oraz pozwalający się odwoływać do \title i \author w treś]ci pracy - https://www.ctan.org/pkg/titling
-	\setlength{\droptitle}{-2.5cm} % Jeżeli podaje się tylko tytuł, bez zastosowania strony tytułowej, warto go podnieść nieco wyżej.
+\usepackage{titling} % Pakiet zapewniający większą kontrolę nad poleceniem \maketitle i \thanks oraz pozwalający się odwoływać
+% do \title i \author w treś]ci pracy - https://www.ctan.org/pkg/titling
+	\setlength{\droptitle}{-2.5cm} % Jeżeli podaje się tylko tytuł, bez zastosowania strony tytułowej,
+% warto go podnieść nieco wyżej.
 
 \usepackage[]{hyperref} % Pakiet umożliwiający zmianę dodatkowych ustawień pliku PDF - https://ctan.org/pkg/hyperref
 \usepackage{xcolor} % Pakiet pozwalający m.in. mieszać podstawowe kolory i tworzyć własne - https://ctan.org/pkg/xcolor
 	\definecolor{orangelink}{rgb}{0.7,0.18,0.1} % Zdefiniowany własny kolor do linków.
 
 	\title{Przykładowy dokument w \LaTeX-u} 
-	\author{JanekR\underline{\hspace{0.2cm}}Prorok} % Zwykły znak podkreślenia jest krótki, dlatego zastosowałem podkreślenie odstępu 2 milimetrowego.
+	\author{JanekR\underline{\hspace{0.2cm}}Prorok} % Zwykły znak podkreślenia jest krótki, dlatego zastosowałem
+% podkreślenie odstępu 2 milimetrowego.
 	\date{\today}
 
 	\hypersetup{ % Ustawienia pliku PDF - http://www.tug.org/applications/hyperref/manual.html#x1-120003.8
@@ -80,7 +92,9 @@
 		bookmarksopen=true, % Otwórz rozwinięte lub zwinięte drzewko zakładek.
 			bookmarksopenlevel=1, % Wybierz do którego poziomu zakładek drzewko ma być rozwinięte.
 		pdfpagelabels=true, % set PDF page labels                   
-		pdfpagemode=UseOutlines, % Determines how the file is opening in Acrobat; the possibilities are UseNone, UseThumbs (show thumbnails), UseOutlines (show bookmarks), FullScreen, UseOC (PDF 1.5), and UseAttachments (PDF 1.6). If no mode if explicitly chosen, but the bookmarks option is set, UseOutlines is used.
+		pdfpagemode=UseOutlines, % Determines how the file is opening in Acrobat; the possibilities are UseNone,
+% UseThumbs (show thumbnails), UseOutlines (show bookmarks), FullScreen, UseOC (PDF 1.5), and UseAttachments (PDF 1.6).
+% If no mode if explicitly chosen, but the bookmarks option is set, UseOutlines is used.
 		unicode=true, % Pozwól w zakładkach Acrobata używać znaków z alfabetów niełacińskich
 		pdftoolbar=true, % Pokaż bądź ukryj pasek narzędziowy Acrobata
 		pdfmenubar=true, % Pokaż bądź ukryj menu Acrobata
@@ -111,7 +125,8 @@
 		% pdfcenterwindow=false, % position the document window in the center of the screen
 		% pdfdirection=, % direction setting   
 		% baseurl=, % Sets the base URL of the PDF document
-		% pdftrapped=, % Sets the document information Trapped entry. Possible values are True, False and Unknown. An empty value means, the entry is not set.
+		% pdftrapped=, % Sets the document information Trapped entry. Possible values are True, False and Unknown.
+% An empty value means, the entry is not set.
 	}
 
 % \usepackage[printwatermark]{xwatermark} % Pakiet umożliwiający dodanie znaku wodnego - https://www.ctan.org/pkg/xwatermark
@@ -129,12 +144,14 @@
 \def\dotfill#1{\cleaders\hbox to #1{.}\hfill}
 \newcommand\dotline[2][0,1cm]{\leavevmode\hbox to #2 {\dotfill{#1}\hfil}}	
  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TREŚĆ DOKUMENTU %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TREŚĆ DOKUMENTU %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-% \sloppy % - Wymuszenie nieprofesjonalnego trzymania się w marginesach jak w MS Word (kosztem dziwnie rozciągniętych odstępów - LaTeX uważa, że lepiej wyjątkowo wyjść ze zbyt długim wyrazem kawałek na margines niż umieszczać między wyrazami kilkucentymetrowe odstępy).
+% \sloppy % - Wymuszenie nieprofesjonalnego trzymania się w marginesach jak w MS Word (kosztem dziwnie rozciągniętych odstępów -
+% LaTeX uważa, że lepiej wyjątkowo wyjść ze zbyt długim wyrazem kawałek na margines niż umieszczać między wyrazami
+% kilkucentymetrowe odstępy).
 \maketitle
 \section{Rozdział pierwszy}
 	Szczegółowe zasady działania systemu składu tekstu \LaTeX znajdziesz w dokumentach, w folderze \emph{Pomoce naukowe}.
