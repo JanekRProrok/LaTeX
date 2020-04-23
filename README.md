@@ -21,4 +21,4 @@ Wybieramy w pasku narzędzi Texmakera *Preferencje*, następnie *Konfiguruj Texm
 Teraz chcąc otrzymać plik PDF, wystarczy kliknąć strzałkę, na pasku narzędzi, przy wybranej z listy opcji *Szybka kompilacja*.
 
 ## Błędy, problemy, nowe rozwiązania
-Rozwiązanie większości błędów znajdziesz w Internecie lub w dokumentacji danych pakietów - linki podałem w preambule dokumentów. 
+Rozwiązanie większości błędów znajdziesz w Internecie lub w dokumentacji danych pakietów – linki podałem w preambule dokumentów. 
