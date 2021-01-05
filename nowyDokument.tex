@@ -29,8 +29,7 @@
 
 \usepackage{enumitem} % Pakiet umożliwiający większą kontrolę nad środowiskami enumerate, itemize i description
 	\setlist{nolistsep} % We żadnych środowiskach enumerate/itemize/description nie chcemy mieć odstępów pionowych.
-	\renewcommand{\labelitemi}{$\bullet$} % Ustawienie kropki jako punktatora pierwszego poziomu listy {itemize}.
-	% \renewcommand{\labelitemii}{$\bullet$} % Ustawienie kropki jako punktatora drugiego poziomu listy {itemize}.
+	\setlist[itemize]{label=$\bullet$} % Ustawienie kropki jako punktatora listy {itemize}.
 	
 \usepackage{makeidx} % Pakiet umożliwiający tworzenie indeksów - https://ctan.org/pkg/makeidx
 
